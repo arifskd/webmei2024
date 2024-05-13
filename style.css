@@ -1,19 +1,62 @@
 :root {
 	--main-color: #ff0000;
-	--box-width: calc(100% - 50px);  	
+	--box-margin: calc(10% - 10px);  	
+	--box-height: 300px;
+	--box-width: 300px;
+	--border-color: rgb(100, 100, 100);
 }
 body {
 	background-color: lightblue;
+	
 }
 
 h1 {
 	color: navy;
 	margin-left: 20px;
+	text-shadow: 2px 2px;
+}
+table {
+	border: 1px solid var(--border-color);
+	padding: 15px;
+	position: relative;
+	left: 30px;
+	top: 25px;
 }
 label {
 	color: var(--main-color, #000000);
+	text-shadow: 2px 2px;
+	font-size: 18px;
 }
 div {
 	background-color: var(--main-color);
+	background-image: linear-gradient(red, yellow);
 	width: var(--box-width);
+	height: var(--box-height);
+	display: inline-block;
+	margin: var(--box-margin);
+	padding: 10px;
+	border: 5px solid var(--border-color);
+	border-radius: 25%;
+}
+img {
+	-webkit-box-reflect: below;
+}
+img, iframe, video, audio {
+	width: 90%;
+	height: 90%;
+	border-radius: 10%;
+	
+}
+input {
+	border-radius: 5px;
+	text-transform: uppercase;
+	
+}
+#submit {
+	float: right;
+	font-size: 24px;
+	padding: 10px;
+	position: absolute;
+	right: 20px;
+	box-shadow: 1px 4px 6px rgba(0, 1, 0, 0.1);
 }
