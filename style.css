@@ -1,0 +1,19 @@
+:root {
+	--main-color: #ff0000;
+	--box-width: calc(100% - 50px);  	
+}
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: navy;
+	margin-left: 20px;
+}
+label {
+	color: var(--main-color, #000000);
+}
+div {
+	background-color: var(--main-color);
+	width: var(--box-width);
+}
